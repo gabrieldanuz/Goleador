@@ -6,7 +6,16 @@ export default function Goleador() {
    <View style={styles.container}>
      <Text>Fala tu, Craque</Text>
      <View>
-        <Text style={styles.textGol}>Brocou quantos hoje?</Text>
+        <TextInput 
+        style={styles.quantGols}
+        keyboardType="numeric"
+        placeholder='Marcou quantos gols hoje ?'
+        />
+                <TextInput 
+        style={styles.quantGols}
+        keyboardType="numeric"
+        placeholder='Pifou quantas ?'
+        />
       </View>
    </View>
  );
@@ -15,11 +24,15 @@ export default function Goleador() {
 const styles = StyleSheet.create({
 container: {
   flex: 1,
+  padding: 10,
 },
-textGol: {
-  fontSize: 18,
-  margin: 10,
-  alignItems: 'center',
+quantGols: {
+  height: 40,
   textAlign: 'center',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginTop: 10,
+  backgroundColor: '#38A69D',
+  borderRadius: 8,
 }
 })

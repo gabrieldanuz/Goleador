@@ -9,13 +9,13 @@ export default function Routes(){
   return(
     <Stack.Navigator>
         <Stack.Screen 
-        name="Goleador"
-        component={Goleador}
+        name="MenuPrincipal"
+        component={MenuPrincipal}
         options={{headerShown: false}}
         />
         <Stack.Screen 
-        name="MenuPrincipal"
-        component={MenuPrincipal}
+        name="Goleador"
+        component={Goleador}
         options={{headerShown: false}}
         />
      </Stack.Navigator>
